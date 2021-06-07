@@ -1,0 +1,7 @@
+---
+- name: Install common dependencies
+  apt:
+    pkg:
+      - apt-transport-https
+    state: present
+    force: yes

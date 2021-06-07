@@ -3,7 +3,6 @@ all:
     localhost:
       ansible_host: 'localhost'
   vars:
-    username: 'ubuntu'
     ansible_become: 'yes'
     ansible_connection: local
     ansible_become_method: 'sudo'

@@ -13,5 +13,5 @@ sudo apt -y install ansible
 
 Install unifi controller in ubuntu server 20.04
 ```bash
-ansible-playbook -i inventory/ubiquiti.yml playbooks/ubiquiti.yml
+ansible-playbook -i inventory/ubiquiti.yml playbooks/ubiquiti.yml -K
 ```

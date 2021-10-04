@@ -1,0 +1,12 @@
+all:
+  hosts:
+    ubiquiti:
+      ansible_host: '<hostname>'
+  vars:
+    username: '<username>'
+    ansible_user: "{{ username }}"
+    ansible_become: 'yes'
+    ansible_connection: 'ssh'
+    ansible_become_method: 'sudo'
+    ansible_ssh_pipelining: true
+    ansible_python_interpreter: /usr/bin/python3

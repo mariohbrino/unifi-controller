@@ -1,6 +1,6 @@
 ---
-- name: Deploy ubiquiti unifi controller
-  hosts: localhost
+- name: "Deploy ubiquiti unifi controller"
+  hosts: ubiquiti
   roles:
     - { role: common  }
     - { role: java    }

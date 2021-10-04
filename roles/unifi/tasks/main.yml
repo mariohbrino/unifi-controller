@@ -1,0 +1,17 @@
+---
+- name: "Add ubiquiti apt key"
+  apt_key:
+    url: "https://dl.ui.com/unifi/unifi-repo.gpg"
+    state: present
+
+- name: "Add ubiquiti ppa"
+  apt_repository:
+    repo: "deb https://www.ui.com/downloads/unifi/debian stable ubiquiti"
+    update_cache: yes
+
+- name: "Install unifi controller"
+  apt:
+    pkg:
+      - unifi
+    state: present
+    force: yes
